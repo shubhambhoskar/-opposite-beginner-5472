@@ -17,10 +17,10 @@ public static Connection provideConnection() {
 			e.printStackTrace();
 		}
 		
-		String url= "jdbc:mysql://localhost:3306/web20sb101db";
+		String url= "jdbc:mysql://localhost:3306/web20";
 		
 		try {
-			conn = DriverManager.getConnection(url, "root", "root");
+			conn = DriverManager.getConnection(url, "root", "Sbhoskar123");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

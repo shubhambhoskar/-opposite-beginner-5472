@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import project.Exception.AdmistartorException;
+import project.Exception.StudentException;
 import project.Utility.DButil;
 import project.model.Admistrator;
 
@@ -105,6 +106,24 @@ try(Connection conn=DButil.provideConnection()) {
 		}else {
 			System.out.println("Course not found");
 		}
+		
+	}
+
+	@Override
+	public void createabatch() throws AdmistartorException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void allocateastudent() throws AdmistartorException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void studentfromeverybatch(int a) throws AdmistartorException, StudentException {
+		// TODO Auto-generated method stub
 		
 	}
 
