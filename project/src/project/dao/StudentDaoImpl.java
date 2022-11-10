@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import project.Exception.AdmistartorException;
 import project.Exception.StudentException;
 import project.Utility.DButil;
 import project.model.Student;
@@ -66,10 +67,17 @@ public class StudentDaoImpl implements StudentDao{
 	}
 
 	@Override
-	public void seatsavailability(String cname) throws StudentException {
-		
+	public void enrollastudentinabatch(int sid, int cid) throws StudentException, AdmistartorException {
+		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void seatsavailability(String cname) throws StudentException {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 	
 }

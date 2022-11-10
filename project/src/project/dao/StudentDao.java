@@ -11,5 +11,9 @@ public interface StudentDao {
 	
 	public void updatestudentdetails(int roll,String name,String address,String email,String password)throws StudentException;
 	
+	public void enrollastudentinabatch(int sid,int cid)throws StudentException,AdmistartorException;
+	
 	public void seatsavailability (String cname) throws StudentException;
+	
+	
 }
