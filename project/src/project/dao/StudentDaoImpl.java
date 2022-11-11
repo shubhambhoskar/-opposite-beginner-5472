@@ -41,7 +41,6 @@ public class StudentDaoImpl implements StudentDao{
 	@Override
 	public void updatestudentdetails(int roll, String name, String address, String email, String password)
 			throws StudentException {
-		// TODO Auto-generated method stub
 	
 		try(Connection conn=DButil.provideConnection()) {
 			
@@ -74,10 +73,9 @@ public class StudentDaoImpl implements StudentDao{
 
 	@Override
 	public void seatsavailability(String cname) throws StudentException {
-		// TODO Auto-generated method stub
+		
 		
 	}
-
 
 	
 }

@@ -1,8 +1,12 @@
 package project.dao;
 
+import java.util.List;
+
 import project.Exception.AdmistartorException;
 import project.Exception.StudentException;
 import project.model.Admistrator;
+import project.model.Batch;
+import project.model.Student;
 
 public interface AdmistratorDao {
 	
@@ -14,9 +18,11 @@ public interface AdmistratorDao {
 	
 	public void SearchInfoAboutCourse( String s);
 	
-	public void createabatch() throws AdmistartorException;
+	public String createabatch(Batch batch) throws AdmistartorException;
 	
-	public void allocateastudent() throws AdmistartorException;
+	public String addstudenttobatchincourse(int roll,int bid, int cid)throws AdmistartorException;
+
+	public void updateseatofbatch(int bid, int updateseat)throws AdmistartorException;
 	
-	public void studentfromeverybatch(int a) throws AdmistartorException,StudentException;
+	public List<Student> getallstudent() throws AdmistartorException;
 }

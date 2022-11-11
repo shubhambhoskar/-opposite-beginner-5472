@@ -2,7 +2,6 @@ package project.dao;
 
 import project.Exception.AdmistartorException;
 import project.Exception.StudentException;
-import project.model.Admistrator;
 import project.model.Student;
 
 public interface StudentDao {
